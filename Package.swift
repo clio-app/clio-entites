@@ -9,15 +9,15 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "ClioEntities",
-            targets: ["clio-app-entities"]),
+            targets: ["ClioEntities"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "clio-app-entities"),
+            name: "ClioEntities"),
         .testTarget(
             name: "clio-app-entitiesTests",
-            dependencies: ["clio-app-entities"]),
+            dependencies: ["ClioEntities"]),
     ]
 )
