@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "ClioEntities",
+    name: "clio-app-entities",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "ClioEntities",
+            name: "clio-app-entities",
             targets: ["clio-app-entities"]),
     ],
     targets: [
