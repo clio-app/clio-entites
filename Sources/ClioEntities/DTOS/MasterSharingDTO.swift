@@ -8,6 +8,6 @@
 import Foundation
 
 public struct MasterSharingDTO: DTO {
-    let countdownTimer: TimeInterval
-    let picture: Data
+    public let countdownTimer: TimeInterval
+    public let picture: Data
 }

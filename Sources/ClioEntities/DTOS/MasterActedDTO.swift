@@ -8,6 +8,6 @@
 import Foundation
 
 public struct MasterActedDTO: DTO {
-    let picture: Data
-    let description: String
+    public let picture: Data
+    public let description: String
 }
