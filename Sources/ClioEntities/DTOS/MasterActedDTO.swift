@@ -10,4 +10,9 @@ import Foundation
 public struct MasterActedDTO: DTO {
     public let picture: Data
     public let description: String
+    
+    public init(picture: Data, description: String) {
+        self.picture = picture
+        self.description = description
+    }
 }
