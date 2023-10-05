@@ -9,4 +9,8 @@ import Foundation
 
 public struct RegisterUserinRoomDTO: DTO {
     public let user: User
+    
+    public init(user: User) {
+        self.user = user
+    }
 }

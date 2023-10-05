@@ -10,4 +10,9 @@ import Foundation
 public struct CreateUserRequest: Codable {
     public let name: String
     public let picture: String
+    
+    public init(name: String, picture: String) {
+        self.name = name
+        self.picture = picture
+    }
 }

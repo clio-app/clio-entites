@@ -10,4 +10,9 @@ import Foundation
 public struct CreateRoomRequest: Codable {
     public let name: String
     public let theme: Theme
+    
+    public init(name: String, theme: Theme) {
+        self.name = name
+        self.theme = theme
+    }
 }
