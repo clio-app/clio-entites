@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RoomCode: Codable {
+public struct RoomCode: Codable, Equatable {
     public let code: String
     
     public init(code: String) { self.code = code }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RoomUser: Codable {
+public struct RoomUser: Codable, Equatable {
     public let rankingPosition: Int
     public let points: Int
     public let user: User

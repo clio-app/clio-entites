@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol DTO: Codable {
+public protocol DTO: Codable, Equatable {
     func encodeToTransfer() -> Data
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CreateUserRequest: Codable {
+public struct CreateUserRequest: Codable, Equatable {
     public let name: String
     public let picture: String
     

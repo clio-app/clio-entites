@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CreateRoomRequest: Codable {
+public struct CreateRoomRequest: Codable, Equatable {
     public let name: String
     public let theme: Theme
     

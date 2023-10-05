@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RegisterUserRequest: Codable {
+public struct RegisterUserRequest: Codable, Equatable {
     public let roomCode: String
     public let user: User
     
