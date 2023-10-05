@@ -8,6 +8,6 @@
 import Foundation
 
 public struct CreateUserRequest: Codable {
-    let name: String
-    let picture: String
+    public let name: String
+    public let picture: String
 }
