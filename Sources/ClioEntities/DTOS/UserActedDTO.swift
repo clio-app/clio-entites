@@ -8,9 +8,11 @@
 import Foundation
 
 public struct UserActedDTO: DTO {
+    public let userId: UUID
     public let description: String
     
-    public init(description: String) {
+    public init(userId: UUID, description: String) {
+        self.userId = userId
         self.description = description
     }
 }

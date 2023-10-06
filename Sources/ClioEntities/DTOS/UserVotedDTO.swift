@@ -8,10 +8,10 @@
 import Foundation
 
 public struct UserVotedDTO: DTO {
-    public let votedUserId: String
+    public let votedUserId: UUID
     public let descriptionId: UUID
     
-    public init(votedUserId: String, descriptionId: UUID) {
+    public init(votedUserId: UUID, descriptionId: UUID) {
         self.votedUserId = votedUserId
         self.descriptionId = descriptionId
     }
