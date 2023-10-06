@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol DTO: Codable, Equatable {
+internal protocol DTO: Codable, Equatable {
     func encodeToTransfer() -> Data
 }
 
-public extension DTO {
+internal extension DTO {
     func encodeToTransfer() -> Data {
         return try! JSONEncoder().encode(self)
     }
