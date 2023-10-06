@@ -8,8 +8,8 @@
 import Foundation
 
 public struct RoomUser: Codable, Equatable {
-    public let rankingPosition: Int
-    public let points: Int
+    public var rankingPosition: Int
+    public var points: Int
     public var didVote: Bool
     public let user: User
     
