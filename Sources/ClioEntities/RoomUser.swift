@@ -10,11 +10,13 @@ import Foundation
 public struct RoomUser: Codable, Equatable {
     public let rankingPosition: Int
     public let points: Int
+    public let didVote: Bool
     public let user: User
     
-    public init(rankingPosition: Int, points: Int, user: User) {
+    public init(rankingPosition: Int, points: Int, didVote: Bool, user: User) {
         self.rankingPosition = rankingPosition
         self.points = points
+        self.didVote = didVote
         self.user = user
     }
 }

@@ -9,10 +9,12 @@ import Foundation
 
 public struct UserDidVoteDTO: DTO {
     public let descriptionId: UUID
-    public let votedCount: Int
+    public let submitVotes: Int
+    public let totalVotes: Int
     
-    public init(descriptionId: UUID, votedCount: Int) {
+    public init(descriptionId: UUID, submitVotes: Int, totalVotes: Int) {
         self.descriptionId = descriptionId
-        self.votedCount = votedCount
+        self.submitVotes = submitVotes
+        self.totalVotes = totalVotes
     }
 }
