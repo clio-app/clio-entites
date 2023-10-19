@@ -13,7 +13,7 @@ public struct User: Codable, Equatable {
     public let picture: String
     public let artefact: SessionArtefacts?
     
-    public init(id: UUID, name: String, picture: String, artefacts: SessionArtefacts?) {
+    public init(id: UUID, name: String, picture: String, artefacts: SessionArtefacts? = nil) {
         self.id = id
         self.name = name
         self.picture = picture
