@@ -8,11 +8,11 @@
 import Foundation
 
 public struct SessionArtefacts: Codable, Equatable {
-    public let picture: Data
-    public let description: String
-    public let masterId: UUID
+    public var picture: Data?
+    public var description: String?
+    public var masterId: UUID
     
-    public init(picture: Data, description: String, masterId: UUID) {
+    public init(picture: Data? = nil, description: String? = nil, masterId: UUID) {
         self.picture = picture
         self.description = description
         self.masterId = masterId
