@@ -8,13 +8,5 @@
 import Foundation
 
 public struct ChooseMasterDTO: DTO {
-    public let reason: ChooseMasterReason
-    public let countdownTimer: TimeInterval
-    public let user: RoomUser
-}
-
-public enum ChooseMasterReason: Codable {
-    case masterTimeout
-    case votingTimeout
-    case none
+    let reason: ChooseMasterReason
 }
