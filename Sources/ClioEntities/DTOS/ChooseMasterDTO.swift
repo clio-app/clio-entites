@@ -8,5 +8,5 @@
 import Foundation
 
 public struct ChooseMasterDTO: DTO {
-    let reason: ChooseMasterReason
+    public let reason: ChooseMasterReason
 }
