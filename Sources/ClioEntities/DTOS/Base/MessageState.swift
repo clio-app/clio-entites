@@ -17,6 +17,7 @@ public enum MessageState: Codable {
         public enum ClientGameFlow: String, Codable {
             case registerUser = "#registerUser"
             case gameStarted = "#gameStarted"
+            case masterChoosed = "#masterChoosed"
             case masterActed = "#masterActed"
             case userActed = "#userActed"
             case userVoted = "#userVoted"
@@ -35,6 +36,7 @@ public enum MessageState: Codable {
         }
         
         public enum ServerGameFlow: String, Codable {
+            case chooseMaster = "#chooseMaster"
             case masterActing = "#masterActing"
             case masterSharing = "#masterSharing"
             case userDidAct = "#userDidAct"
