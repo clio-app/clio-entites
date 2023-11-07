@@ -9,10 +9,10 @@ import Foundation
 
 public struct MasterSharingDTO: DTO {
     public let countdownTimer: TimeInterval
-    public let picture: Data
+    public let pictureID: UUID
     
-    public init(countdownTimer: TimeInterval, picture: Data) {
+    public init(countdownTimer: TimeInterval, pictureID: UUID) {
         self.countdownTimer = countdownTimer
-        self.picture = picture
+        self.pictureID = pictureID
     }
 }
