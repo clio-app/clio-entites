@@ -8,12 +8,12 @@
 import Foundation
 
 public struct StartVotingDTO: DTO {
-    public let picture: Data
+    public let pictureID: UUID
     public let descriptions: [Description]
     public let countdownTimer: TimeInterval
     
-    public init(picture: Data, descriptions: [Description], countdownTimer: TimeInterval) {
-        self.picture = picture
+    public init(pictureID: UUID, descriptions: [Description], countdownTimer: TimeInterval) {
+        self.pictureID = pictureID
         self.descriptions = descriptions
         self.countdownTimer = countdownTimer
     }
