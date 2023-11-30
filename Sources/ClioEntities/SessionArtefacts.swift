@@ -12,7 +12,7 @@ public struct SessionArtefacts: Codable, Equatable {
     public var picture: Data?
     public var description: String?
     
-    public init(masterId: UUID, picture: Data?, description: String?) {
+    public init(masterId: UUID, picture: Data? = nil, description: String? = nil) {
         self.masterId = masterId
         self.picture = picture
         self.description = description
